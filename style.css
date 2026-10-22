@@ -1,0 +1,19 @@
+:root { --bg: #0B1020; --panel: #131A2E; --ink: #EEF1FA; --muted: #8C95B2; --line: #232C45; --lime: #C6F432; --edge: #8AAE16; }
+@media (prefers-color-scheme: light) { :root { --bg: #F3F5F9; --panel: #FFFFFF; --ink: #0B1020; --muted: #58617C; --line: #DCE1EB; --lime: #3D6A00; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 "Barlow", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+.mark { width: 40px; height: 40px; border-radius: 11px; background: #C6F432; border-bottom: 4px solid #8AAE16; display: grid; place-items: center; }
+.brand b { font: 700 26px/1 "Barlow Condensed", sans-serif; letter-spacing: .08em; }
+.brand b span { color: var(--lime); }
+h1 { font: 700 clamp(40px, 9vw, 60px)/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; margin: 36px 0 8px; }
+.card h2 { margin-top: 0; }
+h2 { font: 700 22px/1.1 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .04em; margin: 30px 0 6px; display: flex; align-items: center; gap: 10px; }
+h2::before { content: ""; width: 14px; height: 4px; border-radius: 2px; background: #C6F432; }
+p, li { color: var(--ink); } .muted { color: var(--muted); }
+.date { font: 500 12px/1 "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; margin: 18px 0; }
+a { color: var(--lime); font-weight: 600; }
+.btn { display: inline-block; background: #C6F432; color: #0B1020; border: 1px solid #8AAE16; border-bottom-width: 4px; border-radius: 16px; padding: 12px 20px; text-decoration: none; font-weight: 600; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
